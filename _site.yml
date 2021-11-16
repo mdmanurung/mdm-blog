@@ -17,8 +17,8 @@ navbar:
       href: about.html
     - text: "Posts"
       href: posts.html
-    # - text: "Projects"
-    #   href: projects.html
+    - text: "Projects"
+      href: projects.html
     - icon: fab fa-twitter
       twitter: https://twitter.com/mikhaeldito313
     - icon: fab fa-github

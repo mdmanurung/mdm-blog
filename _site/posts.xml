@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Mikhael Manurung</title>
+    <link>https://mdmanurung.rbind.io</link>
+    <atom:link href="https://mdmanurung.rbind.io/posts.xml" rel="self" type="application/rss+xml"/>
+    <description>Mikhael Manurung's personal website
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 16 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Mikhael D. Manurung</title>
+      <dc:creator>Nora Jones</dc:creator>
+      <link>https://mdmanurung.rbind.io/posts/welcome</link>
+      <description>Welcome to our new blog, Mikhael D. Manurung. We hope you enjoy 
+reading what we have to say!</description>
+      <guid>https://mdmanurung.rbind.io/posts/welcome</guid>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
