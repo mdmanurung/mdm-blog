@@ -1,12 +1,34 @@
-name: "."
-title: "Mikhael D. Manurung"
+name: "mdm-distill"
+title: "Mikhael Manurung"
 description: |
-  Mikhael D. Manurung
+  Mikhael Manurung's personal website
 output_dir: "_site"
+theme: mdm_theme.css
+base_url: https://mdmanurung.rbind.io
+repository_url: https://github.com/MikhaelManurung/mdm-distill
+creative_commons: CC BY-SA
+twitter:
+    site: "@mikhaeldito313"
+    creator: "@mikhaeldito313"
 navbar:
+  search: false
   right:
-    - text: "Home"
-      href: index.html
     - text: "About"
       href: about.html
+    - text: "Posts"
+      href: posts.html
+    # - text: "Projects"
+    #   href: projects.html
+    - icon: fab fa-twitter
+      twitter: https://twitter.com/mikhaeldito313
+    - icon: fab fa-github
+      href: https://github.com/MikhaelManurung/mdm-distill
+    - icon: fas fa-home
+      href: index.html
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    feed_iems_max: 20 # default
 output: distill::distill_article
