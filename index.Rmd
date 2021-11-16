@@ -1,5 +1,22 @@
 ---
-title: "Mikhael D. Manurung"
+title: "Mikhael Manurung"
+image: "images/mdm_profile.jpeg"
+links:
+    - label: '<i class="fab fa-twitter"></i> Twitter'
+      url: "https://twitter.com/mikhaeldito313"
+    - label: '<i class="fab fa-github"></i> GitHub'
+      url: "https://github.com/MikhaelManurung"
+    - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+      url: "https://www.linkedin.com/in/mikhaelmanurung/"
+    - label: '<i class="fas fa-envelope"></i> Email'
+      url: "mailto:mikhael.manurung@gmail.com"
+twitter:
+    creator: "@mikhaeldito313"
+    site: "@mikhaeldito313"
+output:
+    postcards::jolla
 site: distill::distill_website
-listing: posts
+theme: mdm_theme.css
 ---
+    
+Welcome to my personal site! I am a medical doctor attempting to transition to bioinformatics. I am currently doing my PhD _and_ post-doc in the Leiden University Medical Center, where I use CyTOF, RNA-Seq, and scRNA-Seq to improve our understanding in immune response upon parasitic infection and vaccination.
