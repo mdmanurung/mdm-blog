@@ -1,0 +1,46 @@
+---
+title: "Post Title"
+description: |
+  Post description
+author: 
+  - name: Mikhael D. Manruung
+    url: https://twitter.com/mikhaeldito313
+date: "`r Sys.Date()`"
+base_url: https://mdmanurung.rbind.io/
+preview: IMAGE.png
+categories:
+  - TAG_1
+  - TAG_2
+twitter:
+  site: "@mikhaeldito313"
+  creator: "@mikhaeldito313"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = TRUE,
+  message = TRUE,
+  R.options = list(width = 60)
+)
+```
+
+```{r metathis, message=FALSE, warning=FALSE, include=FALSE}
+library(metathis)
+
+meta() %>%
+  meta_name("github-repo" = "mdmanurung/mdm-blog") %>%
+  meta_viewport() %>%
+  meta_social(
+    title = "TITLE", # 
+    image = "https://mdmanurung.rbind.io/posts/FULL_PATH_TO_IMAGE.png", 
+    image_alt = "ALT TEXT FOR IMAGE",
+    og_type = "website",
+    og_author = c("Mikhael D. Manurung"),
+    twitter_card_type = "summary_large_image", # can also be summary
+  )
+```

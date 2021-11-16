@@ -1,0 +1,104 @@
+---
+title: "Talk Title"
+description: |
+  Talk description
+author: 
+  - name: Mikhael D. Manurung
+    url: https://twitter.com/mikhaeldito313
+date: "`r Sys.Date()`"
+base_url: https://mdmanurung.rbind.io/
+preview: IMAGE.png
+twitter:
+  site: "@mikhaeldito313"
+  creator: "@ellamikhaeldito313mkaye"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r metathis, message=FALSE, warning=FALSE, include=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "mdmanurung/mdm-blog") %>%
+  meta_viewport() %>%
+  meta_social(
+    title = "TITLE", # 
+    image = "https://mdmanurung.rbind.io/posts/FULL_PATH_TO_IMAGE.png", 
+    image_alt = "ALT TEXT FOR IMAGE",
+    og_type = "website",
+    og_author = c("Mikhael D. Manurung"),
+    twitter_card_type = "summary_large_image", # can also be summary
+  )
+```
+
+
+
+```{r libraries}
+library(distilltools)
+```
+
+```{r icon-links}
+# [TODO]: fill in urls
+# [TODO]: delete any unessary icons (or add more)
+# [TODO]: css styling for .icon-link and .icon-link:hover
+# [NOTE]: icons in same chunk will appear on same line
+# [NOTE]: icons in different chunks will appear on a different lines
+icon_link(
+  icon = "images",
+  text = "slides",
+  url = ""
+)
+icon_link(
+  icon = "github",
+  text = "materials",
+  url = ""
+)
+icon_link(
+  icon = "play-circle",
+  text = "video",
+  url = ""
+)
+icon_link(
+  icon = "box-open",
+  text = "package",
+  url = ""
+)
+```
+
+## Overview 
+
+
+## Event details
+
+**Event:** [GROUP](url)
+
+**Date:** DATE
+
+**Time:** TIME
+
+**Location:** LOCATION
+
+## Key points
+
+- Point 1
+- Point 2
+- ...
+
+## Slides
+
+Keyboard Shortcuts for Slides:
+
+- Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides.
+- Use <kbd>f</kbd> to toggle full screen.
+- Use <kbd>o</kbd> to view an overview of all slides.
+- Use <kbd>h</kbd> to see a list of other shortcuts.
+
+```{r slides, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "url")
+```
