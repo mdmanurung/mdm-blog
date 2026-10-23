@@ -1,0 +1,37 @@
+name: Discover metadata for review
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/validate_content.py
+      - name: Publication candidates
+        run: python scripts/sync_publications.py
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      - name: Allowlisted repository snapshot
+        if: always()
+        run: python scripts/sync_github.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Substack candidates
+        if: always()
+        run: python scripts/sync_substack.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unreviewed-metadata
+          path: cache/*.yml
+          if-no-files-found: ignore
+# Read-only discovery; download the artifact and accept selected records in a PR.
+# No workflow mutates the public catalogue or pushes to main.

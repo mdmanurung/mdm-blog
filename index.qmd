@@ -1,46 +1,40 @@
 ---
-title: Home
-description: Research into human immune variation, infection and vaccination, with open scientific software.
+title: ""
+pagetitle: Mikhael Manurung | Immunology & computational biology
+description: Mikhael Manurung’s research, news, selected publications and scientific software.
 page-layout: full
-title-block-style: none
 ---
 
-::: {.hero}
-::: {}
-[Immunology × computational biology]{.eyebrow}
+::: {.bio-intro}
+[Immunology & computational biology]{.eyebrow}
 
-# Understanding why human immune responses differ.
+# Mikhael Manurung
 
-::: {.lede}
-I study how genetics, environment and infection history shape immunity across populations, using experimental and computational approaches.
-:::
+I am an immunologist and computational biologist at Leiden University Medical Center. I study how environmental exposures, infection history and genetics shape human immune variation and responses to infection and vaccination.
 
-::: {.actions}
-[Explore research](research/index.qmd){.action .primary}
-[Scientific software](software/index.qmd){.action}
-:::
-:::
-::: {.hero-aside}
-**Mikhael Manurung**
+My work combines cytometry and single-cell profiling with computational methods. I also develop open-source tools for interpretable analysis and reproducible research.
 
-Immunologist and computational biologist at Leiden University Medical Center.
+[About & contact](about/index.qmd) · [Publications](publications/index.qmd) · [GitHub](https://github.com/mdmanurung)
 
-[About my work →](about/index.qmd)
+::: {.research-links}
+**Research:** [Human immune variation](research/index.qmd#immune-variation) · [Infection & vaccination](research/index.qmd#infection-vaccines) · [Computational immunology](research/index.qmd#computational-immunology)
 :::
 :::
 
-## Research directions
+{{< include _generated/news.html >}}
 
-{{< include _generated/themes.html >}}
+## Explore my research
+
+Choose a theme to explore the questions and methods behind my work.
+
+{{< include _generated/explorer.html >}}
 
 {{< include _generated/featured-publications.html >}}
 
-## Scientific software
-
-Tools for interpretable analysis and reproducible research.
+## Selected packages & software
 
 {{< include _generated/featured-projects.html >}}
 
-[Browse scientific software →](software/index.qmd){.section-link}
+[All software →](software/index.qmd){.section-link}
 
 {{< include _generated/latest-writing.html >}}

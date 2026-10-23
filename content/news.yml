@@ -1,0 +1,25 @@
+- id: phipseq-2026
+  title: PhIP-seq paper published in iScience
+  date: '2026-09-01'
+  display_date: September 2026
+  description: Our study of antibody repertoires across rural and urban populations
+    is published in iScience.
+  url: https://doi.org/10.1016/j.isci.2026.117252
+  topics:
+  - immune-variation
+  visibility: public
+  provenance:
+    confirmed_by: Crossref publication issue month; exact announcement day not asserted
+- id: phd-2025
+  title: PhD completed at LUMC
+  date: '2025-06-13'
+  display_date: June 2025
+  description: I completed my PhD in Immunology at Leiden University Medical Center.
+  url: /about/
+  topics:
+  - immune-variation
+  - infection-vaccines
+  - computational-immunology
+  visibility: public
+  provenance:
+    confirmed_by: Owner-provided biography in conversation

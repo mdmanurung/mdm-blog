@@ -1,6 +1,7 @@
 ---
 title: Scientific software
 description: Selected open-source tools for single-cell analysis, viral detection and multiblock integration.
+page-layout: full
 ---
 
 Open-source tools for scientific analysis. Start with a tool’s overview, then follow its repository for installation instructions and examples.

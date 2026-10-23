@@ -18,8 +18,8 @@ def publication(row, topics):
         links += [link(u,label) for u in row.get(field,[])]
     abstract = '<details><summary>Abstract</summary><p>'+E(row['abstract'])+'</p></details>' if row.get('abstract') else ''
     return f'''<article class="record" data-record data-year="{row['year']}" data-topic="{E('|'.join(row['topics']))}">
-<h3>{link(row['paper_url'],row['title'])}</h3><p class="meta">{E(', '.join(row['authors']))}<br>{E(row['venue'])} · {row['year']} <span class="badge-label">{E(row['status'])}</span></p>
-{('<p>'+E(row['significance'])+'</p>') if row.get('significance') else ''}{abstract}<div class="record-links">{' '.join(links)}</div>{related(row,topics)}</article>'''
+<h3>{link(row['paper_url'],row['title'])}</h3><p class="meta">{E(row['authors'][0] + (' et al.' if len(row['authors']) > 1 else ''))}<br>{E(row['venue'])} · {row['year']} <span class="badge-label">{E(row['status'])}</span></p>
+<details class="authors"><summary>Full author list</summary><p>{E(', '.join(row['authors']))}</p></details>{('<p>'+E(row['significance'])+'</p>') if row.get('significance') else ''}{abstract}<div class="record-links">{' '.join(links)}</div>{related(row,topics)}</article>'''
 
 def project(row, topics):
     links = [link('/software/'+row['id']+'/', 'Overview'),link('https://github.com/'+row['repository'],'Repository')]
@@ -44,14 +44,14 @@ def controls(kind,rows,topics):
 def catalog(kind,rows,topics,render):
     if not rows:
         return '<p class="empty-state">The publication catalogue is being curated. Verified records will appear here after review.</p>' if kind == 'publications' else '<p class="empty-state">No writing has been published here yet. Research notes and links to external essays will appear as they are added.</p>'
-    return '<section data-catalog aria-label="'+kind+' directory">'+controls(kind,rows,topics)+'<p class="meta" data-count aria-live="polite">'+str(len(rows))+' results</p><div class="'+('software-grid' if kind=='projects' else 'records')+'">'+''.join(render(x,topics) for x in rows)+'</div><p class="empty-state" data-empty hidden>No matching results. Try another search or clear the filters.</p></section>'
+    return '<section data-catalog aria-label="'+kind+' directory"><h2 class="visually-hidden">Directory records</h2>'+controls(kind,rows,topics)+'<p class="meta" data-count aria-live="polite">'+str(len(rows))+' results</p><div class="'+('software-grid' if kind=='projects' else 'records')+'">'+''.join(render(x,topics) for x in rows)+'</div><p class="empty-state" data-empty hidden>No matching results. Try another search or clear the filters.</p></section>'
 
 def generate(root=ROOT):
     data = load(root)
     posts = native_posts(root)
     errors = validate(data,posts)
     if errors: raise ValueError('\n'.join(errors))
-    data = {k:[x for x in rows if x['visibility']=='public'] for k,rows in data.items()}
+    data = {k:[x for x in rows if x['visibility']=='public' and not x.get('hidden')] for k,rows in data.items()}
     topics = {x['id']:x for x in data['research']}
     papers = sorted(data['publications'],key=lambda x:(-x['year'],x['title']))
     projects = sorted(data['projects'],key=lambda x:(not x.get('featured',False),x.get('feature_order',100),x['title'].lower()))
@@ -60,17 +60,32 @@ def generate(root=ROOT):
     # Remove stale fragments after a record is removed or made draft.
     for path in out.glob('*.html'): path.unlink()
     def put(name,text): (out/(name+'.html')).write_text(text+'\n')
+    news = sorted(data.get('news',[]),key=lambda x:str(x['date']),reverse=True)[:4]
+    put('news', ('<h2>News</h2><div class="news-list">'+''.join('<article class="news-item"><time datetime="'+E(x['date'])+'">'+E(x.get('display_date',x['date']))+'</time><div><p>'+ (link(x['url'],x['title']) if x.get('url') else E(x['title']))+'</p><p class="meta">'+E(x.get('description',''))+'</p></div></article>' for x in news)+'</div>') if news else '')
     put('themes','<div class="theme-grid">'+''.join(f'<article class="theme-card"><span class="eyebrow">0{i+1}</span><h3>{link("/research/#"+x["id"],x["name"])}</h3><p>{E(x["question"])}</p></article>' for i,x in enumerate(topics.values()))+'</div>')
     put('publications',catalog('publications',papers,topics,publication))
     put('projects',catalog('projects',projects,topics,project))
     put('writing',catalog('writing',writings,topics,writing))
     featured = [p for p in papers if p.get('featured')][:3]
-    put('featured-publications',('<h2>Selected research</h2>'+''.join(publication(x,topics) for x in featured)) if featured else '')
-    put('featured-projects','<div class="software-grid">'+''.join(project(x,topics) for x in projects if x.get('featured'))+'</div>')
+    put('featured-publications',('<h2>Selected publications</h2><p>'+link('/publications/','All publications →')+'</p>'+''.join(publication(x,topics) for x in featured)) if featured else '')
+    put('featured-projects','<div class="software-grid">'+''.join(project(x,topics) for x in [p for p in projects if p.get('featured')][:4])+'</div>')
     put('latest-writing',('<h2>Writing & ideas</h2>'+''.join(writing(x,topics) for x in writings[:3])+link('/writing/','All writing →')) if writings else '')
+    icons = [
+        '<svg viewBox="0 0 160 100" aria-hidden="true"><circle cx="80" cy="50" r="34" fill="#d5e9de"/><path d="M25 70 55 35 85 70M75 70 106 23 140 70" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="31" cy="22" r="9" fill="#d7aa61"/></svg>',
+        '<svg viewBox="0 0 160 100" aria-hidden="true"><circle cx="80" cy="50" r="34" fill="#f0e1cb"/><path d="M80 24v52M54 50h52" stroke="currentColor" stroke-width="5"/><circle cx="80" cy="50" r="28" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 5"/></svg>',
+        '<svg viewBox="0 0 160 100" aria-hidden="true"><circle cx="80" cy="50" r="34" fill="#dce5ef"/><path d="m60 32-18 18 18 18m40-36 18 18-18 18m-12-43-16 50" fill="none" stroke="currentColor" stroke-width="3"/></svg>'
+    ]
+    explorer = '<section class="research-explorer" data-explorer aria-label="Explore research questions"><div class="explorer-controls">'
+    for i,t in enumerate(topics.values()):
+        explorer += '<button class="explorer-button" type="button" data-explore="'+t['id']+'" aria-controls="explore-'+t['id']+'" aria-pressed="false">'+icons[i%len(icons)]+'<span>'+E(t['name'])+'</span></button>'
+    explorer += '</div><div class="explorer-panels">'
+    for t in topics.values():
+        explorer += '<section id="explore-'+t['id']+'" data-explore-panel="'+t['id']+'"><h3>'+E(t['question'])+'</h3><p>'+E(t.get('approach',t.get('description','')))+'</p><p class="method-tags">'+''.join('<span>'+E(m)+'</span>' for m in t.get('methods',[]))+'</p><p>'+link('/research/#'+t['id'],'Explore this research →')+'</p></section>'
+    explorer += '</div></section>'
+    put('explorer',explorer)
     research = ''
     for t in topics.values():
-        research += f'<section id="{t["id"]}"><h2>{E(t["name"])}</h2><p><strong>{E(t["question"])}</strong></p><p>{E(t.get("description",""))}</p>'
+        research += f'<section id="{t["id"]}"><h2>{E(t["name"])}</h2><p><strong>{E(t["question"])}</strong></p><p>{E(t.get("why",t.get("description","")))}</p><h3>How I study it</h3><p>{E(t.get("approach",""))}</p><h3>What we’re learning</h3><p>{E(t.get("learning",""))}</p><h3>Related work</h3>'
         for rows,render in [(papers,publication),(projects,project),(writings,writing)]:
             research += ''.join(render(x,topics) for x in rows if t['id'] in x['topics'])
         research += '</section>'

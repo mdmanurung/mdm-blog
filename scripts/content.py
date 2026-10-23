@@ -7,7 +7,7 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-KINDS = ('research', 'publications', 'projects', 'substack')
+KINDS = ('research', 'publications', 'projects', 'substack', 'news')
 
 def read_yaml(path, default=None):
     if not Path(path).exists() and default is not None:
@@ -114,7 +114,9 @@ def validate(data, posts=()):
                 if not isinstance(row.get(name,[]),list) or any(not url(u) for u in row.get(name,[])): fail(a,'invalid '+name)
         elif kind == 'projects':
             repo = row.get('repository','')
-            if not re.fullmatch(r'[\w.-]+/[\w.-]+',repo): fail(a,'invalid repository')
+            if not isinstance(repo,str) or not re.fullmatch(r'[\w.-]+/[\w.-]+',repo): fail(a,'invalid repository')
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',str(row.get('id',''))): fail(a,'invalid project slug')
+            repo = str(repo)
             if repo.lower() in repos: fail(a,'duplicate repository')
             repos.add(repo.lower())
             if row.get('maturity') not in {'stable','active','experimental','archived'}: fail(a,'invalid maturity')
@@ -123,6 +125,10 @@ def validate(data, posts=()):
             if not isinstance(refs,list) or any(x not in ids['publications'] for x in refs): fail(a,'unknown paper_ids')
             elif public and any(x not in public_papers for x in refs): fail(a,'public project references draft paper')
             if row.get('docs_url') and not url(row['docs_url']): fail(a,'invalid docs URL')
+        elif kind == 'news':
+            if not iso_date(row.get('date')): fail(a,'invalid news date')
+            address=row.get('url','')
+            if address and not address.startswith('/') and not url(address): fail(a,'invalid news URL')
         elif kind in {'substack','native'}:
             if not iso_date(row.get('date')): fail(a,'invalid date')
             if kind == 'substack':

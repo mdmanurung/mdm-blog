@@ -1,1 +1,105 @@
-[]
+- id: doi:10.1016/j.isci.2026.117252
+  doi: 10.1016/j.isci.2026.117252
+  title: Phage-display immunoprecipitation sequencing reveals distinct antibody repertoire
+    patterns across rural and urban populations
+  authors:
+  - Ross F. Laidlaw
+  - Gabriel Innocenti
+  - Melanie Prinzensteiner
+  - Thomas Vogl
+  - Moustapha Mbow
+  - Maria Yazdanbakhsh
+  - Mikhael D. Manurung
+  year: 2026
+  venue: iScience
+  status: peer-reviewed
+  topics:
+  - immune-variation
+  featured: true
+  significance: Antibody repertoire profiling connects microbial exposure patterns
+    with immune variation across rural and urban populations.
+  paper_url: https://doi.org/10.1016/j.isci.2026.117252
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://api.crossref.org/works/10.1016/j.isci.2026.117252
+    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
+      records; owner selection approval pending'
+    checked_at: '2026-10-23'
+- id: doi:10.1038/s41467-024-50313-0
+  doi: 10.1038/s41467-024-50313-0
+  title: Controlled human hookworm infection remodels plasmacytoid dendritic cells
+    and regulatory T cells towards profiles seen in natural infections in endemic
+    areas
+  authors:
+  - Mikhael D. Manurung
+  - Friederike Sonnet
+  - Marie-Astrid Hoogerwerf
+  - Jacqueline J. Janse
+  - Yvonne Kruize
+  - Laura de Bes-Roeleveld
+  - Marion König
+  - Alex Loukas
+  - Benjamin G. Dewals
+  - Taniawati Supali
+  - Simon P. Jochems
+  - Meta Roestenberg
+  - Mariateresa Coppola
+  - Maria Yazdanbakhsh
+  year: 2024
+  venue: Nature Communications
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  - immune-variation
+  featured: true
+  significance: Controlled hookworm infection provides a longitudinal view of immune
+    remodelling, alongside comparisons with endemic populations.
+  paper_url: https://doi.org/10.1038/s41467-024-50313-0
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://api.crossref.org/works/10.1038/s41467-024-50313-0
+    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
+      records; owner selection approval pending'
+    checked_at: '2026-10-23'
+- id: doi:10.1016/j.isci.2025.113839
+  doi: 10.1016/j.isci.2025.113839
+  title: Immuno-functionomics reveals geographical variation and a role for TLR8 in
+    mRNA vaccine responses
+  authors:
+  - Wesley Huisman
+  - Shohreh Azimi
+  - Yen Nhi Nguyen
+  - Alicia C. de Kroon
+  - Karin de Ruiter
+  - Dicky L. Tahapary
+  - Mikhael D. Manurung
+  - Cilia R. Pothast
+  - Yvonne C.M. Kruize
+  - Mirjam H.M. Heemskerk
+  - Taniawati Supali
+  - Leo G. Visser
+  - Anna H.E. Roukens
+  - Maria Yazdanbakhsh
+  - Simon P. Jochems
+  year: 2025
+  venue: iScience
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  - computational-immunology
+  featured: true
+  significance: Functional immune profiling examines geographical variation and TLR8-associated
+    responses to mRNA vaccination.
+  paper_url: https://doi.org/10.1016/j.isci.2025.113839
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://api.crossref.org/works/10.1016/j.isci.2025.113839
+    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
+      records; owner selection approval pending'
+    checked_at: '2026-10-23'

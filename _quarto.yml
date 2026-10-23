@@ -13,7 +13,8 @@ project:
   post-render:
     - python3 scripts/finalize_site.py
   resources:
-    - assets/
+    - assets/site.css
+    - assets/catalog.js
 website:
   title: Mikhael Manurung
   description: Population immunology, scientific software, and research notes.
@@ -47,8 +48,9 @@ format:
     lang: en
     toc: false
     pagetitle: "{{< meta title >}} | Mikhael Manurung"
-    anchor-sections: true
+    anchor-sections: false
     include-in-header: assets/head.html
+    include-before-body: assets/skip.html
     include-after-body: assets/after.html
     css: assets/site.css
     smooth-scroll: false

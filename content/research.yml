@@ -4,15 +4,51 @@
   description: Connecting population studies with immune phenotyping to understand
     differences between people and settings.
   visibility: public
+  why: People encounter different environments and microbes throughout life. Understanding
+    these histories can help us interpret differences in immune profiles across populations.
+  approach: I combine population studies, high-dimensional immune phenotyping and
+    antibody repertoire profiling to study variation across rural and urban settings.
+  learning: Our PhIP-seq study describes antibody repertoire patterns across rural
+    Senegal, urban Senegal and the Netherlands. These patterns connect microbial exposure
+    histories with broader immune variation.
+  methods:
+  - Population studies
+  - Cytometry
+  - Antibody profiling
 - id: infection-vaccines
   name: Infection & vaccination
   question: Which immune responses contribute to protection?
   description: Studying responses to vaccination and controlled infection across populations,
     with a focus on malaria and parasitic infections.
   visibility: public
+  why: The same infection or vaccine can elicit different responses between people.
+    Controlled infection studies help us observe how those responses develop over
+    time.
+  approach: I analyse longitudinal immune measurements from vaccination and controlled
+    human infection studies, alongside comparisons with naturally exposed populations.
+  learning: Our controlled hookworm study followed immune remodelling in four volunteers
+    and compared it with profiles in endemic populations. Related collaborative work
+    examines functional immune variation and responses to mRNA vaccination.
+  methods:
+  - Controlled infection
+  - Longitudinal profiling
+  - Functional assays
 - id: computational-immunology
   name: Computational immunology
   question: How can complex immune measurements become interpretable evidence?
   description: Developing and applying methods for single-cell analysis, multimodal
     integration and reproducible research.
   visibility: public
+  why: Single-cell and multi-omics experiments generate many measurements. The challenge
+    is to turn those measurements into interpretable patterns that can be checked
+    and reused.
+  approach: I develop and apply methods for cell-type-specific expression programs,
+    multiblock integration and reproducible analysis workflows.
+  learning: 'The software collection provides complementary tools: cellprograms for
+    transcriptional programs, RaJIVEplus for shared and block-specific variation,
+    and ViralScan for viral signals. Their documentation describes current capabilities
+    and limitations.'
+  methods:
+  - Single-cell analysis
+  - Matrix factorisation
+  - Reproducible workflows

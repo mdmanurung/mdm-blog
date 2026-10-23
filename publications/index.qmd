@@ -1,6 +1,7 @@
 ---
 title: Publications
 description: Search publications by title, author, year and research topic, with links to canonical scholarly records.
+page-layout: full
 ---
 
 Research articles and preprints, with links to the original scholarly records.

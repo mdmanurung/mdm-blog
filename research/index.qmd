@@ -1,6 +1,7 @@
 ---
 title: Research
 description: Questions connecting population immunology, infection and vaccination, and computational methods.
+page-layout: full
 ---
 
 My research connects experimental immunology with computational analysis to understand differences in human immune responses.

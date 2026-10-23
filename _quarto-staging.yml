@@ -1,7 +1,7 @@
 website:
-  site-url: https://example.invalid
+  site-url: https://mdm-portfolio-review-oct26.cocoagecko258.chatgpt.site
 format:
   html:
     include-in-header:
-      - assets/head.html
-      - assets/noindex.html
+    - assets/head.html
+    - assets/noindex.html

@@ -19,3 +19,15 @@ document.querySelectorAll('[data-catalog]').forEach(catalog => {
   controls.forEach(control => control.addEventListener(control.tagName === 'SELECT' ? 'change' : 'input', apply));
   apply();
 });
+
+// Progressive enhancement: every research panel remains readable without JS.
+document.querySelectorAll('[data-explorer]').forEach(explorer => {
+  const buttons = [...explorer.querySelectorAll('[data-explore]')];
+  const panels = [...explorer.querySelectorAll('[data-explore-panel]')];
+  const select = id => {
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.explore === id)));
+    panels.forEach(panel => { panel.hidden = panel.dataset.explorePanel !== id; });
+  };
+  buttons.forEach(button => button.addEventListener('click', () => select(button.dataset.explore)));
+  if (buttons.length) select(buttons[0].dataset.explore);
+});

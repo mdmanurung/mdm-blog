@@ -10,7 +10,7 @@ import yaml
 
 class ContentTests(unittest.TestCase):
     def setUp(self):
-        self.data = {'research':[{'id':'topic','name':'Topic','question':'Question?','visibility':'public'}], 'projects':[], 'substack':[], 'publications':[]}
+        self.data = {'research':[{'id':'topic','name':'Topic','question':'Question?','visibility':'public'}], 'projects':[], 'substack':[], 'news':[], 'publications':[]}
         self.paper = dict(id='doi:10.1234/test', doi='10.1234/test',title='Fixture research',year=2026,venue='Fixture',authors=['A. Author'],status='preprint',topics=['topic'],paper_url='https://doi.org/10.1234/test',visibility='draft')
     def test_repository_data_valid(self): self.assertEqual(validate(load()),[])
     def test_duplicate_doi(self):
