@@ -1,0 +1,18 @@
+- id: immune-variation
+  name: Human immune variation
+  question: How do environment, ancestry and infection history shape immunity?
+  description: Connecting population studies with immune phenotyping to understand
+    differences between people and settings.
+  visibility: public
+- id: infection-vaccines
+  name: Infection & vaccination
+  question: Which immune responses contribute to protection?
+  description: Studying responses to vaccination and controlled infection across populations,
+    with a focus on malaria and parasitic infections.
+  visibility: public
+- id: computational-immunology
+  name: Computational immunology
+  question: How can complex immune measurements become interpretable evidence?
+  description: Developing and applying methods for single-cell analysis, multimodal
+    integration and reproducible research.
+  visibility: public

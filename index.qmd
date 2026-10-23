@@ -1,0 +1,46 @@
+---
+title: Home
+description: Research into human immune variation, infection and vaccination, with open scientific software.
+page-layout: full
+title-block-style: none
+---
+
+::: {.hero}
+::: {}
+[Immunology × computational biology]{.eyebrow}
+
+# Understanding why human immune responses differ.
+
+::: {.lede}
+I study how genetics, environment and infection history shape immunity across populations, using experimental and computational approaches.
+:::
+
+::: {.actions}
+[Explore research](research/index.qmd){.action .primary}
+[Scientific software](software/index.qmd){.action}
+:::
+:::
+::: {.hero-aside}
+**Mikhael Manurung**
+
+Immunologist and computational biologist at Leiden University Medical Center.
+
+[About my work →](about/index.qmd)
+:::
+:::
+
+## Research directions
+
+{{< include _generated/themes.html >}}
+
+{{< include _generated/featured-publications.html >}}
+
+## Scientific software
+
+Tools for interpretable analysis and reproducible research.
+
+{{< include _generated/featured-projects.html >}}
+
+[Browse scientific software →](software/index.qmd){.section-link}
+
+{{< include _generated/latest-writing.html >}}

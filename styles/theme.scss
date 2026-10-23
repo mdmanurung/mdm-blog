@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+$body-bg: #FAFAF7;
+$body-color: #1D3034;
+$link-color: #176A70;
+$primary: #176A70;
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, sans-serif;
+$headings-font-family: "Source Serif 4", Georgia, serif;
+$font-size-base: 1.05rem;
+$navbar-bg: #FAFAF7;
+$navbar-fg: #1D3034;
+$navbar-hl: #176A70;
+/*-- scss:rules --*/
+h1, h2, h3 { font-weight: 500; }
+.navbar-brand { font-family: Georgia, serif; font-weight: 600; }
+.navbar { border-bottom: 1px solid #CAD8D5; padding-block: 1rem; }

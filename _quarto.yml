@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _preview
+  render:
+    - index.qmd
+    - research/**/*.qmd
+    - publications/index.qmd
+    - software/**/*.qmd
+    - writing/**/*.qmd
+    - about/index.qmd
+  pre-render:
+    - python3 scripts/render_content.py
+  post-render:
+    - python3 scripts/finalize_site.py
+  resources:
+    - assets/
+website:
+  title: Mikhael Manurung
+  description: Population immunology, scientific software, and research notes.
+  site-url: https://mdmanurung.rbind.io
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    background: light
+    left:
+      - text: Research
+        href: research/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      - text: Software
+        href: software/index.qmd
+      - text: Writing
+        href: writing/index.qmd
+      - text: About
+        href: about/index.qmd
+  page-footer:
+    left: Mikhael Manurung · Immunology & computational biology
+    right:
+      - text: GitHub
+        href: https://github.com/mdmanurung
+      - text: Contact
+        href: about/index.qmd#contact
+format:
+  html:
+    theme: [litera, styles/theme.scss]
+    lang: en
+    toc: false
+    pagetitle: "{{< meta title >}} | Mikhael Manurung"
+    anchor-sections: true
+    include-in-header: assets/head.html
+    include-after-body: assets/after.html
+    css: assets/site.css
+    smooth-scroll: false
+execute:
+  enabled: false
