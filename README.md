@@ -1,7 +1,7 @@
 # Mikhael Manurung — Quarto research portfolio
 
-Review branch for the Distill → Quarto migration. **The existing website is unchanged.**
-The original source and `_site/` remain for rollback. New builds write only `_preview/`.
+The Quarto website is published at <https://mdmanurung.github.io/mdm-blog/>.
+The original Distill source and `_site/` remain available for rollback. New builds write only `_preview/`.
 
 ## Build and test
 
@@ -40,16 +40,12 @@ Publication discovery needs the owner’s ORCID or exact OpenAlex author ID; the
 
 All refreshes write only `cache/`, never `content/`. Failed fetches/parsing retain the last cache. RSS omissions never remove historical records. Review additions and version relationships, preserve manual tags and hidden/draft decisions, then add accepted records through a PR. `content/decisions.yml` records rejected publication IDs. The read-only weekly/manual discovery workflow uploads a review artifact instead of opening PRs automatically. GitHub can disable scheduled workflows in inactive repositories; manual dispatch/local commands remain available.
 
-## Preview and review
+## Preview and deployment
 
-The preview workflow builds downloadable artifacts without deploying to GitHub Pages or the existing domain. A separate private staging Site is used for review. No production deploy workflow is included.
+Pull requests and feature branches build downloadable preview artifacts without deploying. Merges to `main` run the production build and publish it to GitHub Pages. The Pages URL uses the GitHub-hosted project domain; the legacy `mdmanurung.rbind.io` domain is not changed.
 
 For browser QA in the managed environment: run `python3 scripts/prepare_browser_qa.py` after building, then restart `sites-preview` if the clean build replaced its output directory. `_qa/` contains synthetic fixtures and must be removed before staging packaging. It is never part of a final clean build.
 
 See [implementation notes](docs/implementation/06-quality-and-handoff.md), [original specification](docs/specification/README.md) and [maintenance runbook](docs/specification/14-maintenance-runbook.md).
 
-## Launch gates
-
-Owner approval of profile, news, selected papers and software descriptions; Scholar bibliography reconciliation and Substack feed if desired; CV/figure permission if used; production-host ownership and rollback verification. Do not merge or deploy to the existing website until reviewed.
-
-Latest review includes the owner-supplied portrait, both Rubicon news sources, five software projects led by mycelium-extra, and first/second/last-author filtering for featured and related papers. ORCID/OpenAlex identities are verified. Google Scholar returned HTTP 429, so the bibliography is independently verified rather than claimed as a complete Scholar import; see [source review](docs/implementation/publication-source-review.md).
+The launch content has been approved for publication. The Google Scholar bibliography is independently verified rather than claimed as a complete Scholar import because Google Scholar returned HTTP 429; see [source review](docs/implementation/publication-source-review.md).

@@ -18,7 +18,7 @@ project:
 website:
   title: Mikhael Manurung
   description: Population immunology, scientific software, and research notes.
-  site-url: https://mdmanurung.rbind.io
+  site-url: https://mdmanurung.github.io/mdm-blog/
   search:
     location: navbar
     type: overlay
