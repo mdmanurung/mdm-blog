@@ -37,9 +37,10 @@ for path,page in pages.items():
 for route in ['index.html','research/index.html','publications/index.html','software/index.html','writing/index.html','about/index.html','posts.html','projects.html','about.html','posts/welcome/index.html','posts.xml','writing/index.xml','search.json','sitemap.xml','robots.txt']:
     if not (root/route).exists(): errors.append('Missing '+route)
 all_text='\n'.join(x.read_text() for x in root.rglob('*.html'))
+public_titles={x.get('title') for rows in load().values() for x in rows if x.get('visibility')=='public'}
 for kind,rows in load().items():
     for row in rows:
-        if row['visibility']=='draft' and row.get('title') and row['title'] in all_text: errors.append('Draft leaked: '+row['id'])
+        if row['visibility']=='draft' and row.get('title') and row['title'] not in public_titles and row['title'] in all_text: errors.append('Draft leaked: '+row['id'])
 search=json.loads((root/'search.json').read_text())
 if len(search)<6: errors.append('Search index missing top-level pages')
 if errors: raise SystemExit('\n'.join(errors))

@@ -20,7 +20,7 @@ python3 scripts/build.py
 - `content/profile.yml`: verified identifiers/feed settings; unresolved values stay null.
 - `content/research.yml`: questions, importance, methods and evidence narratives.
 - `content/news.yml`: dated, manually curated news, newest first (up to four on Home).
-- `content/publications.yml`: selected, manually verified scholarly records. `featured: true` selects up to three for Home. `version_of` records reviewed version relationships.
+- `content/publications.yml`: 21 verified public scholarly records (19 journal articles and two preprints). `featured: true` selects up to three for Home. `version_of` records reviewed version relationships.
 - `content/projects.yml`: allowlisted tools, owner-curated ordering and descriptions.
 - `content/substack.yml`: reviewed metadata-only external articles, linked to originals.
 - `writing/posts/<slug>/index.qmd`: original published articles. Keep drafts under `drafts/`, outside the render tree. Start from `templates/quarto/post.qmd`.
@@ -50,4 +50,6 @@ See [implementation notes](docs/implementation/06-quality-and-handoff.md), [orig
 
 ## Launch gates
 
-Owner approval of profile, news, selected papers and software descriptions; complete bibliography/ORCID and Substack feed if desired; CV/photo/figure permission if used; production-host ownership and rollback verification. Do not merge or deploy to the existing website until reviewed.
+Owner approval of profile, news, selected papers and software descriptions; Scholar bibliography reconciliation and Substack feed if desired; CV/figure permission if used; production-host ownership and rollback verification. Do not merge or deploy to the existing website until reviewed.
+
+Latest review includes the owner-supplied portrait, both Rubicon news sources, five software projects led by mycelium-extra, and first/second/last-author filtering for featured and related papers. ORCID/OpenAlex identities are verified. Google Scholar returned HTTP 429, so the bibliography is independently verified rather than claimed as a complete Scholar import; see [source review](docs/implementation/publication-source-review.md).

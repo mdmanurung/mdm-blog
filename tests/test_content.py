@@ -25,6 +25,12 @@ class ContentTests(unittest.TestCase):
     def test_public_requires_approval(self):
         self.data['publications']=[dict(self.paper,visibility='public')]
         self.assertIn('approval provenance',' '.join(validate(self.data)))
+    def test_featured_authorship_gate(self):
+        self.data['publications']=[dict(self.paper,featured=True,author_role='middle')]
+        self.assertIn('featured paper requires',' '.join(validate(self.data)))
+    def test_authorship_order_must_match(self):
+        self.data['publications']=[dict(self.paper,authors=['A. Author','B. Author','Mikhael D Manurung','C. Author'],author_role='first')]
+        self.assertIn('author role does not match',' '.join(validate(self.data)))
     def test_url_security(self):
         self.data['substack']=[dict(id='essay',title='Essay',canonical_url='javascript:alert(1)',date='2026-10-23',visibility='draft',topics=['topic'])]
         self.assertIn('invalid canonical',' '.join(validate(self.data)))

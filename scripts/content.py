@@ -7,6 +7,12 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+OWNER_NAMES = {'mikhaeldmanurung', 'mikhaelditomanurung', 'mikhaelmanurung'}
+
+def owner_position(authors):
+    positions=[i for i,name in enumerate(authors) if re.sub('[^a-z]','',str(name).lower()) in OWNER_NAMES]
+    return positions[0] if len(positions)==1 else None
+
 KINDS = ('research', 'publications', 'projects', 'substack', 'news')
 
 def read_yaml(path, default=None):
@@ -107,6 +113,14 @@ def validate(data, posts=()):
                 if not row.get('venue') or not isinstance(row.get('authors'),list) or not row['authors']: fail(a,'missing venue/authors')
                 if not url(row.get('paper_url')): fail(a,'invalid paper URL')
                 if not row.get('provenance',{}).get('confirmed_by'): fail(a,'approval provenance required')
+            if row.get('author_role'):
+                names=row.get('authors',[])
+                if owner_position(names) is None: fail(a,'author role requires unambiguous verified owner name')
+                else:
+                    position=owner_position(names)
+                    expected='first' if position==0 else 'second' if position==1 else 'last' if position==len(names)-1 else 'middle'
+                    if row['author_role']!=expected: fail(a,'author role does not match author order')
+            if row.get('featured') and row.get('author_role') not in {'first','second','last'}: fail(a,'featured paper requires first/second/last authorship')
             if row.get('version_of') and row['version_of'] not in ids['publications']: fail(a,'unknown version_of')
             for name in ['oa_url']:
                 if row.get(name) and not url(row[name]): fail(a,'invalid '+name)

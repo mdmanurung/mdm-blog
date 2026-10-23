@@ -5,6 +5,7 @@ description: Mikhael Manurung’s research, news, selected publications and scie
 page-layout: full
 ---
 
+::: {.bio-layout}
 ::: {.bio-intro}
 [Immunology & computational biology]{.eyebrow}
 
@@ -18,6 +19,11 @@ My work combines cytometry and single-cell profiling with computational methods.
 
 ::: {.research-links}
 **Research:** [Human immune variation](research/index.qmd#immune-variation) · [Infection & vaccination](research/index.qmd#infection-vaccines) · [Computational immunology](research/index.qmd#computational-immunology)
+:::
+:::
+
+::: {.portrait-column}
+![Mikhael Manurung](images/mdm_profile.jpeg){.profile-portrait width=240 height=240}
 :::
 :::
 

@@ -8,9 +8,9 @@
     these histories can help us interpret differences in immune profiles across populations.
   approach: I combine population studies, high-dimensional immune phenotyping and
     antibody repertoire profiling to study variation across rural and urban settings.
-  learning: Our PhIP-seq study describes antibody repertoire patterns across rural
-    Senegal, urban Senegal and the Netherlands. These patterns connect microbial exposure
-    histories with broader immune variation.
+  learning: Our systems analysis identified a rural–urban gradient in immune profiles,
+    function and metabolic measurements across populations. Our PhIP-seq study adds
+    complementary information about microbial exposure histories.
   methods:
   - Population studies
   - Cytometry
@@ -27,8 +27,8 @@
   approach: I analyse longitudinal immune measurements from vaccination and controlled
     human infection studies, alongside comparisons with naturally exposed populations.
   learning: Our controlled hookworm study followed immune remodelling in four volunteers
-    and compared it with profiles in endemic populations. Related collaborative work
-    examines functional immune variation and responses to mRNA vaccination.
+    and compared it with profiles in endemic populations. This provides a longitudinal
+    example of how infection can reshape immune-cell profiles.
   methods:
   - Controlled infection
   - Longitudinal profiling
@@ -44,10 +44,10 @@
     and reused.
   approach: I develop and apply methods for cell-type-specific expression programs,
     multiblock integration and reproducible analysis workflows.
-  learning: 'The software collection provides complementary tools: cellprograms for
-    transcriptional programs, RaJIVEplus for shared and block-specific variation,
-    and ViralScan for viral signals. Their documentation describes current capabilities
-    and limitations.'
+  learning: 'The software collection spans interpretable analysis and research practice:
+    cellprograms for expression programs, stablr for biomarker selection, RaJIVEplus
+    for multiblock variation and ViralScan for viral signals. Mycelium Extra supports
+    planning and oversight of agent-assisted analyses.'
   methods:
   - Single-cell analysis
   - Matrix factorisation

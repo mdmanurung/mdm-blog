@@ -1,0 +1,8 @@
+---
+title: stablr
+description: R-native sparse biomarker selection and multi-omic modelling.
+---
+
+[← All software](../index.qmd)
+
+{{< include ../../_generated/project-stablr.html >}}

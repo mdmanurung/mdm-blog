@@ -1,0 +1,8 @@
+---
+title: mycelium-extra
+description: Planning, execution review and provenance for agent-assisted research.
+---
+
+[← All software](../index.qmd)
+
+{{< include ../../_generated/project-mycelium-extra.html >}}

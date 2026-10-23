@@ -1,49 +1,366 @@
+- id: doi:10.21203/rs.3.rs-10495129/v1
+  doi: 10.21203/rs.3.rs-10495129/v1
+  title: BCG vaccination attenuates Schistosoma mansoni-associated rural–urban immune
+    variation
+  authors:
+  - Gyaviira Nkurunungi
+  - Marion König
+  - Bridgious Walusimbi
+  - Jacent Nassuuna
+  - Yoanne D. Mouwenda
+  - Emily L. Webb
+  - Mikhael D. Manurung
+  - Simon P. Jochems
+  - Maria Yazdanbakhsh
+  - Alison M. Elliott
+  year: 2026
+  venue: Research Square
+  status: preprint
+  topics:
+  - immune-variation
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.21203/rs.3.rs-10495129/v1
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.21203/rs.3.rs-10495129/v1
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
 - id: doi:10.1016/j.isci.2026.117252
   doi: 10.1016/j.isci.2026.117252
   title: Phage-display immunoprecipitation sequencing reveals distinct antibody repertoire
     patterns across rural and urban populations
   authors:
-  - Ross F. Laidlaw
+  - Ross F Laidlaw
   - Gabriel Innocenti
   - Melanie Prinzensteiner
   - Thomas Vogl
   - Moustapha Mbow
   - Maria Yazdanbakhsh
-  - Mikhael D. Manurung
+  - Mikhael D Manurung
   year: 2026
   venue: iScience
   status: peer-reviewed
   topics:
   - immune-variation
+  author_role: last
   featured: true
-  significance: Antibody repertoire profiling connects microbial exposure patterns
-    with immune variation across rural and urban populations.
   paper_url: https://doi.org/10.1016/j.isci.2026.117252
   code_urls: []
   data_urls: []
   visibility: public
   provenance:
-    discovered_from: https://api.crossref.org/works/10.1016/j.isci.2026.117252
-    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
-      records; owner selection approval pending'
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1016/j.isci.2026.117252
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
     checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/42657060/
+  significance: Antibody repertoire profiling connects microbial exposure patterns
+    with immune variation across rural and urban populations.
+- id: doi:10.1016/j.lanmic.2025.101263
+  doi: 10.1016/j.lanmic.2025.101263
+  title: Tackling vaccine hyporesponsiveness through global collaboration, diverse
+    population studies, and data integration
+  authors:
+  - Abena S Amoah
+  - Selidji T Agnandji
+  - Michel Bengtson
+  - Jennifer A Downs
+  - Meral Esen
+  - Jeevan Giddaluru
+  - Simon P Jochems
+  - Maria M M Kaisar
+  - Julia Makinde
+  - Mikhael D Manurung
+  - Moustapha Mbow
+  - Gemma Moncunill
+  - Rajagopal Murugan
+  - Jacqueline Mutai
+  - Helder I Nakaya
+  - Gyaviira Nkurunungi
+  - Magnus Palmblad
+  - Jeremia J Pyuza
+  - Koen A Stam
+  - Wouter A A de Steenhuijsen Piters
+  - Bridgious Walusimbi
+  - Maria Yazdanbakhsh
+  - Participants of the Lorentz Center Workshop titled Connecting people to reverse
+    vaccine hyporesponsiveness
+  year: 2026
+  venue: The Lancet Microbe
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1016/j.lanmic.2025.101263
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1016/j.lanmic.2025.101263
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/41285137/
+    author_list_note: PubMed named authors plus the collective-author entry used;
+      Crossref includes repeated consortium members.
+- id: doi:10.1097/in9.0000000000000073
+  doi: 10.1097/in9.0000000000000073
+  title: Comparison of immunometabolic profiles in whole blood versus peripheral blood
+    mononuclear cells
+  authors:
+  - Ibrahima Diallo
+  - Graham Heieis
+  - Mikhael D Manurung
+  - Marouba Cisse
+  - Yoanne D Mouwenda
+  - Yvonne C M Kruize
+  - Moustapha Mbow
+  - Maria Yazdanbakhsh
+  - Bart Everts
+  year: 2025
+  venue: Immunometabolism
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  - computational-immunology
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1097/in9.0000000000000073
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1097/in9.0000000000000073
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/41230343/
+- id: doi:10.1016/j.isci.2025.113839
+  doi: 10.1016/j.isci.2025.113839
+  title: Immuno-functionomics reveals geographical variation and a role for TLR8 in
+    mRNA vaccine responses
+  authors:
+  - Wesley Huisman
+  - Shohreh Azimi
+  - Yen Nhi Nguyen
+  - Alicia C de Kroon
+  - Karin de Ruiter
+  - Dicky L Tahapary
+  - Mikhael D Manurung
+  - Cilia R Pothast
+  - Yvonne C M Kruize
+  - Mirjam H M Heemskerk
+  - Taniawati Supali
+  - Leo G Visser
+  - Anna H E Roukens
+  - Maria Yazdanbakhsh
+  - Simon P Jochems
+  year: 2025
+  venue: iScience
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  - computational-immunology
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1016/j.isci.2025.113839
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1016/j.isci.2025.113839
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/41312379/
+- id: doi:10.1101/2025.09.05.673697
+  doi: 10.1101/2025.09.05.673697
+  title: Mass cytometry data integration methods reveal rural-urban gradient of immune
+    profiles across geography
+  authors:
+  - Koen A. Stam
+  - Jeremia J. Pyuza
+  - Mikhael Manurung
+  - Dicky L. Tahapary
+  - Taniawati Supali
+  - Marloes M.A.R. van Dorst
+  - Ahmed Mahfouz
+  - Mohammed Charrout
+  - Simon P. Jochems
+  - Wesley Huisman
+  - Marion König
+  - Yvonne C.M. Kruize
+  - Marouba Cisse
+  - Ibrahima Diallo
+  - Moustapha Mbow
+  - Maria Yazdanbakhsh
+  - Wouter A.A. de Steenhuijsen Piters
+  year: 2025
+  venue: bioRxiv
+  status: preprint
+  topics:
+  - immune-variation
+  - computational-immunology
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1101/2025.09.05.673697
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1101/2025.09.05.673697
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+- id: doi:10.1101/2025.08.26.671278
+  doi: 10.1101/2025.08.26.671278
+  title: Phage-display immunoprecipitation sequencing reveals distinct antibody repertoire
+    patterns across a rural-urban gradient
+  authors:
+  - Ross F. Laidlaw
+  - Gabriel Innocenti
+  - Thomas Vogl
+  - Moustapha Mbow
+  - Maria Yazdanbakhsh
+  - Mikhael D. Manurung
+  year: 2025
+  venue: bioRxiv
+  status: preprint
+  topics:
+  - immune-variation
+  author_role: last
+  featured: false
+  paper_url: https://doi.org/10.1101/2025.08.26.671278
+  code_urls: []
+  data_urls: []
+  visibility: draft
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1101/2025.08.26.671278
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+  version_of: doi:10.1016/j.isci.2026.117252
+- id: doi:10.1126/sciadv.adu0419
+  doi: 10.1126/sciadv.adu0419
+  title: Systems analysis unravels a common rural-urban gradient in immunological
+    profile, function, and metabolic dependencies
+  authors:
+  - Mikhael D Manurung
+  - Graham A Heieis
+  - Marion König
+  - Shohreh Azimi
+  - Malick Ndao
+  - Tom Veldhuizen
+  - Dennis Hoving
+  - Pytsje T Hoekstra
+  - Yvonne C M Kruize
+  - Linda J Wammes
+  - Roberta Menafra
+  - Marouba Cisse
+  - Souleymane Mboup
+  - Alioune Dieye
+  - Susan Kloet
+  - Dicky L Tahapary
+  - Taniawati Supali
+  - Manfred Wuhrer
+  - Cornelis H Hokke
+  - Bart Everts
+  - Ahmed Mahfouz
+  - Simon P Jochems
+  - Maria Yazdanbakhsh
+  - Moustapha Mbow
+  year: 2025
+  venue: Science Advances
+  status: peer-reviewed
+  topics:
+  - immune-variation
+  - computational-immunology
+  author_role: first
+  featured: true
+  paper_url: https://doi.org/10.1126/sciadv.adu0419
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1126/sciadv.adu0419
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/40305616/
+  significance: Systems-level immune profiling identifies a rural–urban gradient across
+    populations, connecting immune variation with functional and metabolic measurements.
+- id: doi:10.1038/s41522-025-00687-w
+  doi: 10.1038/s41522-025-00687-w
+  title: Tanzanian gut microbiota profiles linked to high but rapidly waning yellow
+    fever antibody titers
+  authors:
+  - Jeremia J Pyuza
+  - Marloes M A R van Dorst
+  - David Barnett
+  - Koen Stam
+  - Mikhael Manurung
+  - Linda Wammes
+  - Marion König
+  - Yvonne Kruize
+  - Nikuntufya Andongolile
+  - Anastazia Ngowi
+  - Elichilia R Shao
+  - Vesla I Kullaya
+  - Alex Mremi
+  - Pancras C W Hogendoorn
+  - Sia E Msuya
+  - Simon P Jochems
+  - John Penders
+  - Maria Yazdanbakhsh
+  - Wouter A A de Steenhuijsen Piters
+  year: 2025
+  venue: npj Biofilms and Microbiomes
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1038/s41522-025-00687-w
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1038/s41522-025-00687-w
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/40537463/
 - id: doi:10.1038/s41467-024-50313-0
   doi: 10.1038/s41467-024-50313-0
   title: Controlled human hookworm infection remodels plasmacytoid dendritic cells
     and regulatory T cells towards profiles seen in natural infections in endemic
     areas
   authors:
-  - Mikhael D. Manurung
+  - Mikhael D Manurung
   - Friederike Sonnet
   - Marie-Astrid Hoogerwerf
-  - Jacqueline J. Janse
+  - Jacqueline J Janse
   - Yvonne Kruize
   - Laura de Bes-Roeleveld
   - Marion König
   - Alex Loukas
-  - Benjamin G. Dewals
+  - Benjamin G Dewals
   - Taniawati Supali
-  - Simon P. Jochems
+  - Simon P Jochems
   - Meta Roestenberg
   - Mariateresa Coppola
   - Maria Yazdanbakhsh
@@ -53,53 +370,518 @@
   topics:
   - infection-vaccines
   - immune-variation
+  author_role: first
   featured: true
-  significance: Controlled hookworm infection provides a longitudinal view of immune
-    remodelling, alongside comparisons with endemic populations.
   paper_url: https://doi.org/10.1038/s41467-024-50313-0
   code_urls: []
   data_urls: []
   visibility: public
   provenance:
-    discovered_from: https://api.crossref.org/works/10.1038/s41467-024-50313-0
-    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
-      records; owner selection approval pending'
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1038/s41467-024-50313-0
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
     checked_at: '2026-10-23'
-- id: doi:10.1016/j.isci.2025.113839
-  doi: 10.1016/j.isci.2025.113839
-  title: Immuno-functionomics reveals geographical variation and a role for TLR8 in
-    mRNA vaccine responses
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/39013877/
+  significance: Controlled hookworm infection provides a longitudinal view of immune
+    remodelling, alongside comparisons with endemic populations.
+- id: doi:10.1093/cei/uxae074
+  doi: 10.1093/cei/uxae074
+  title: Multi-dimensional analysis of B cells reveals the expansion of memory and
+    regulatory B-cell clusters in humans living in rural tropical areas
   authors:
-  - Wesley Huisman
-  - Shohreh Azimi
-  - Yen Nhi Nguyen
-  - Alicia C. de Kroon
-  - Karin de Ruiter
-  - Dicky L. Tahapary
-  - Mikhael D. Manurung
-  - Cilia R. Pothast
-  - Yvonne C.M. Kruize
-  - Mirjam H.M. Heemskerk
-  - Taniawati Supali
-  - Leo G. Visser
-  - Anna H.E. Roukens
+  - Mathilde A M Chayé
+  - Oscar R J van Hengel
+  - Astrid L Voskamp
+  - Arifa Ozir-Fazalalikhan
+  - Marion H König
+  - Koen A Stam
+  - Mikhael D Manurung
+  - Yoanne D Mouwenda
+  - Yvonne A Aryeetey
+  - Agnes Kurniawan
+  - Yvonne C M Kruize
+  - Erliyani Sartono
+  - Anne-Marie Buisman
   - Maria Yazdanbakhsh
-  - Simon P. Jochems
-  year: 2025
-  venue: iScience
+  - Tamar Tak
+  - Hermelijn H Smits
+  year: 2024
+  venue: Clinical and Experimental Immunology
   status: peer-reviewed
   topics:
-  - infection-vaccines
-  - computational-immunology
-  featured: true
-  significance: Functional immune profiling examines geographical variation and TLR8-associated
-    responses to mRNA vaccination.
-  paper_url: https://doi.org/10.1016/j.isci.2025.113839
+  - immune-variation
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1093/cei/uxae074
   code_urls: []
   data_urls: []
   visibility: public
   provenance:
-    discovered_from: https://api.crossref.org/works/10.1016/j.isci.2025.113839
-    confirmed_by: 'Implementation bibliographic review: Crossref and publisher/PubMed
-      records; owner selection approval pending'
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1093/cei/uxae074
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
     checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/39129562/
+- id: doi:10.1002/eji.202451029
+  doi: 10.1002/eji.202451029
+  title: Potentiation of the axis involving pentose phosphate pathway/NADPH oxidase/reactive
+    oxygen species drives higher IL-10 production in monocytes of Sub-Saharan Africans
+  authors:
+  - Madeleine Eunice Betouke Ongwe
+  - Yoanne D Mouwenda
+  - Mikhael D Manurung
+  - Graham Heieis
+  - Shohreh Azimi
+  - Ayola A Adegnika
+  - Peter G Kremsner
+  - Taco W Kuijpers
+  - Maria Yazdanbakhsh
+  - Bart Everts
+  year: 2024
+  venue: European Journal of Immunology
+  status: peer-reviewed
+  topics:
+  - immune-variation
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1002/eji.202451029
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1002/eji.202451029
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/38873882/
+- id: doi:10.1371/journal.pntd.0011344
+  doi: 10.1371/journal.pntd.0011344
+  title: Schistosoma mansoni egg-derived thioredoxin and Sm14 drive the development
+    of IL-10 producing regulatory B cells
+  authors:
+  - Mathilde A M Chayé
+  - Thomas A Gasan
+  - Arifa Ozir-Fazalalikhan
+  - Maaike R Scheenstra
+  - Anna Zawistowska-Deniziak
+  - Oscar R J van Hengel
+  - Max Gentenaar
+  - Mikhael D Manurung
+  - Michael R Harvey
+  - Jeroen D C Codée
+  - Fabrizio Chiodo
+  - Anouk M Heijke
+  - Alicja Kalinowska
+  - Angela van Diepen
+  - Paul J Hensbergen
+  - Maria Yazdanbakhsh
+  - Bruno Guigas
+  - Cornelis H Hokke
+  - Hermelijn H Smits
+  year: 2023
+  venue: PLOS Neglected Tropical Diseases
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1371/journal.pntd.0011344
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1371/journal.pntd.0011344
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/37363916/
+- id: doi:10.1038/s41598-022-17725-8
+  doi: 10.1038/s41598-022-17725-8
+  title: Immunological profiles associated with distinct parasitemic states in volunteers
+    undergoing malaria challenge in Gabon
+  authors:
+  - Mikhael D Manurung
+  - Sanne E de Jong
+  - Yvonne Kruize
+  - Yoanne D Mouwenda
+  - Madeleine Eunice Betouke Ongwe
+  - Yabo Josiane Honkpehedji
+  - Jeannot Frézus Zinsou
+  - Jean Claude Dejon-Agobe
+  - Stephen L Hoffman
+  - Peter G Kremsner
+  - Ayola Akim Adegnika
+  - Rolf Fendel
+  - Benjamin Mordmüller
+  - Meta Roestenberg
+  - Bertrand Lell
+  - Maria Yazdanbakhsh
+  year: 2022
+  venue: Scientific Reports
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: first
+  featured: false
+  paper_url: https://doi.org/10.1038/s41598-022-17725-8
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1038/s41598-022-17725-8
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/35922467/
+- id: doi:10.3390/nu14163326
+  doi: 10.3390/nu14163326
+  title: 'Urbanization and Unfavorable Changes in Metabolic Profiles: A Prospective
+    Cohort Study of Indonesian Young Adults'
+  authors:
+  - Farid Kurniawan
+  - Mikhael D Manurung
+  - Dante S Harbuwono
+  - Em Yunir
+  - Roula Tsonaka
+  - Tika Pradnjaparamita
+  - Dhanasari Vidiawati
+  - Angelica Anggunadi
+  - Pradana Soewondo
+  - Maria Yazdanbakhsh
+  - Erliyani Sartono
+  - Dicky L Tahapary
+  year: 2022
+  venue: Nutrients
+  status: peer-reviewed
+  topics:
+  - immune-variation
+  author_role: second
+  featured: false
+  paper_url: https://doi.org/10.3390/nu14163326
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.3390/nu14163326
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/36014832/
+- id: doi:10.3390/metabo12121224
+  doi: 10.3390/metabo12121224
+  title: Urinary Metabolic Profiling in Volunteers Undergoing Malaria Challenge in
+    Gabon
+  authors:
+  - Madeleine Eunice Betouke Ongwe
+  - Isabelle Kohler
+  - Mikhael D Manurung
+  - Aswin Verhoeven
+  - Rico Derks
+  - Jacqueline J Janse
+  - Yoanne D Mouwenda
+  - Peter G Kremsner
+  - Ayola A Adegnika
+  - Bertrand Lell
+  - Bart Everts
+  - Oleg A Mayboroda
+  - Maria Yazdanbakhsh
+  year: 2022
+  venue: Metabolites
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.3390/metabo12121224
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.3390/metabo12121224
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/36557262/
+- id: doi:10.1038/s41590-021-00911-7
+  doi: 10.1038/s41590-021-00911-7
+  title: Systems analysis and controlled malaria infection in Europeans and Africans
+    elucidate naturally acquired immunity
+  authors:
+  - Sanne E de Jong
+  - Vincent van Unen
+  - Mikhael D Manurung
+  - Koen A Stam
+  - Jelle J Goeman
+  - Simon P Jochems
+  - Thomas Höllt
+  - Nicola Pezzotti
+  - Yoanne D Mouwenda
+  - Madeleine Eunice Betouke Ongwe
+  - Freia-Raphaella Lorenz
+  - Yvonne C M Kruize
+  - Shohreh Azimi
+  - Marion H König
+  - Anna Vilanova
+  - Elmar Eisemann
+  - Boudewijn P F Lelieveldt
+  - Meta Roestenberg
+  - B Kim Lee Sim
+  - Marcel J T Reinders
+  - Rolf Fendel
+  - Stephen L Hoffman
+  - Peter G Kremsner
+  - Frits Koning
+  - Benjamin Mordmüller
+  - Bertrand Lell
+  - Maria Yazdanbakhsh
+  year: 2021
+  venue: Nature Immunology
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1038/s41590-021-00911-7
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1038/s41590-021-00911-7
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/33888898/
+- id: doi:10.1093/infdis/jiaa414
+  doi: 10.1093/infdis/jiaa414
+  title: A Randomized Controlled Trial to Investigate Safety and Variability of Egg
+    Excretion After Repeated Controlled Human Hookworm Infection
+  authors:
+  - Marie-Astrid Hoogerwerf
+  - Jan Pieter R Koopman
+  - Jacqueline J Janse
+  - Marijke C C Langenberg
+  - Roos van Schuijlenburg
+  - Yvonne C M Kruize
+  - Eric A T Brienen
+  - Mikhael D Manurung
+  - Petra Verbeek-Menken
+  - Martha T van der Beek
+  - Inge M Westra
+  - Pauline Meij
+  - Leo G Visser
+  - Lisette van Lieshout
+  - Sake J de Vlas
+  - Maria Yazdanbakhsh
+  - Luc E Coffeng
+  - Meta Roestenberg
+  year: 2020
+  venue: The Journal of Infectious Diseases
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1093/infdis/jiaa414
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1093/infdis/jiaa414
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/32645714/
+- id: doi:10.1038/s41591-020-0759-x
+  doi: 10.1038/s41591-020-0759-x
+  title: A controlled human Schistosoma mansoni infection model to advance novel drugs,
+    vaccines and diagnostics
+  authors:
+  - Marijke C C Langenberg
+  - Marie-Astrid Hoogerwerf
+  - Jan Pieter R Koopman
+  - Jacqueline J Janse
+  - Janneke Kos-van Oosterhoud
+  - Carola Feijt
+  - Simon P Jochems
+  - Claudia J de Dood
+  - Roos van Schuijlenburg
+  - Arifa Ozir-Fazalalikhan
+  - Mikhael D Manurung
+  - Erliyani Sartono
+  - Martha T van der Beek
+  - Béatrice M F Winkel
+  - Petra H Verbeek-Menken
+  - Koen A Stam
+  - Fijs W B van Leeuwen
+  - Pauline Meij
+  - Angela van Diepen
+  - Lisette van Lieshout
+  - Govert J van Dam
+  - Paul L A M Corstjens
+  - Cornelis H Hokke
+  - Maria Yazdanbakhsh
+  - Leo G Visser
+  - Meta Roestenberg
+  year: 2020
+  venue: Nature Medicine
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1038/s41591-020-0759-x
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1038/s41591-020-0759-x
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/32066978/
+- id: doi:10.1126/scitranslmed.aaz5629
+  doi: 10.1126/scitranslmed.aaz5629
+  title: A double-blind, placebo-controlled phase 1/2a trial of the genetically attenuated
+    malaria vaccine PfSPZ-GA1
+  authors:
+  - Meta Roestenberg
+  - Jona Walk
+  - Saskia C van der Boor
+  - Marijke C C Langenberg
+  - Marie-Astrid Hoogerwerf
+  - Jacqueline J Janse
+  - Mikhael Manurung
+  - X Zen Yap
+  - Amanda Fabra García
+  - Jan Pieter R Koopman
+  - Pauline Meij
+  - Els Wessels
+  - Karina Teelen
+  - Youri M van Waardenburg
+  - Marga van de Vegte-Bolmer
+  - Geert Jan van Gemert
+  - Leo G Visser
+  - André J A M van der Ven
+  - Quirijn de Mast
+  - K C Natasha
+  - Yonas Abebe
+  - Tooba Murshedkar
+  - Peter F Billingsley
+  - Tom L Richie
+  - B Kim Lee Sim
+  - Chris J Janse
+  - Stephen L Hoffman
+  - Shahid M Khan
+  - Robert W Sauerwein
+  year: 2020
+  venue: Science Translational Medicine
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1126/scitranslmed.aaz5629
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1126/scitranslmed.aaz5629
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/32434847/
+- id: doi:10.1093/infdis/jiz641
+  doi: 10.1093/infdis/jiz641
+  title: A Praziquantel Treatment Study of Immune and Transcriptome Profiles in Schistosoma
+    haematobium-Infected Gabonese Schoolchildren
+  authors:
+  - Lucja A Labuda
+  - Ayola A Adegnika
+  - Bruce A Rosa
+  - John Martin
+  - Ulysse Ateba-Ngoa
+  - Abena Serwaa Amoah
+  - Honorine Mbenkep Lima
+  - Lynn Meurs
+  - Moustapha Mbow
+  - Mikhael D Manurung
+  - Jeannot F Zinsou
+  - Hermelijn H Smits
+  - Peter G Kremsner
+  - Makedonka Mitreva
+  - Maria Yazdanbakhsh
+  year: 2019
+  venue: The Journal of Infectious Diseases
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1093/infdis/jiz641
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1093/infdis/jiz641
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/31844885/
+- id: doi:10.1093/infdis/jiz218
+  doi: 10.1093/infdis/jiz218
+  title: New Insights Into the Kinetics and Variability of Egg Excretion in Controlled
+    Human Hookworm Infections
+  authors:
+  - Marie-Astrid Hoogerwerf
+  - Luc E Coffeng
+  - Eric A T Brienen
+  - Jacqueline J Janse
+  - Marijke C C Langenberg
+  - Yvonne C M Kruize
+  - Chelsea Gootjes
+  - Mikhael D Manurung
+  - Mark Dekker
+  - Luke Becker
+  - Marianne A A Erkens
+  - Martha T van der Beek
+  - Munisha S Ganesh
+  - Carola Feijt
+  - Beatrice M F Winkel
+  - Inge M Westra
+  - Pauline Meij
+  - Alex Loukas
+  - Leo G Visser
+  - Sake J de Vlas
+  - Maria Yazdanbakhsh
+  - Lisette van Lieshout
+  - Meta Roestenberg
+  year: 2019
+  venue: The Journal of Infectious Diseases
+  status: peer-reviewed
+  topics:
+  - infection-vaccines
+  author_role: middle
+  featured: false
+  paper_url: https://doi.org/10.1093/infdis/jiz218
+  code_urls: []
+  data_urls: []
+  visibility: public
+  provenance:
+    discovered_from: https://orcid.org/0000-0003-2728-1829; https://openalex.org/A5021732660
+    metadata_source: https://api.crossref.org/works/10.1093/infdis/jiz218
+    confirmed_by: Named-author and DOI verification against Crossref and PubMed; owner
+      selection review pending
+    checked_at: '2026-10-23'
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/31077279/

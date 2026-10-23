@@ -1,6 +1,6 @@
 ---
 title: Scientific software
-description: Selected open-source tools for single-cell analysis, viral detection and multiblock integration.
+description: Open-source tools for agent-assisted research, single-cell analysis, biomarker selection and multi-omics.
 page-layout: full
 ---
 

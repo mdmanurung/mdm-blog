@@ -18,14 +18,14 @@ def publication(row, topics):
         links += [link(u,label) for u in row.get(field,[])]
     abstract = '<details><summary>Abstract</summary><p>'+E(row['abstract'])+'</p></details>' if row.get('abstract') else ''
     return f'''<article class="record" data-record data-year="{row['year']}" data-topic="{E('|'.join(row['topics']))}">
-<h3>{link(row['paper_url'],row['title'])}</h3><p class="meta">{E(row['authors'][0] + (' et al.' if len(row['authors']) > 1 else ''))}<br>{E(row['venue'])} · {row['year']} <span class="badge-label">{E(row['status'])}</span></p>
+<h3>{link(row['paper_url'],row['title'])}</h3><p class="meta">{E(row['authors'][0] + (' et al.' if len(row['authors']) > 1 else ''))}<br>{E(row['venue'])} · {row['year']} {('<span class=author-role>'+E(row['author_role'])+' author</span>') if row.get('author_role') in {'first','second','last'} else ''} <span class="badge-label">{E(row['status'])}</span></p>
 <details class="authors"><summary>Full author list</summary><p>{E(', '.join(row['authors']))}</p></details>{('<p>'+E(row['significance'])+'</p>') if row.get('significance') else ''}{abstract}<div class="record-links">{' '.join(links)}</div>{related(row,topics)}</article>'''
 
 def project(row, topics):
     links = [link('/software/'+row['id']+'/', 'Overview'),link('https://github.com/'+row['repository'],'Repository')]
     if row.get('docs_url'): links.append(link(row['docs_url'],'Documentation'))
-    return f'''<article class="software-card" data-record data-topic="{E('|'.join(row['topics']))}" data-maturity="{E(row['maturity'])}">
-<span class="badge-label">{E(row['maturity'])}</span><h3>{link('/software/'+row['id']+'/',row['title'])}</h3><p>{E(row['summary'])}</p><p class="meta">For {E(row['audience'])}</p><div class="record-links">{' '.join(links)}</div>{related(row,topics)}</article>'''
+    return f'''<article class="software-card {"software-spotlight" if row.get("spotlight") else ""}" data-record data-topic="{E('|'.join(row['topics']))}" data-maturity="{E(row['maturity'])}">
+{'<span class="eyebrow">Featured · Research workflows</span><br>' if row.get("spotlight") else ""}<span class="badge-label">{E("Active development" if row["maturity"]=="active" else row["maturity"])}</span><h3>{link('/software/'+row['id']+'/',row['title'])}</h3><p>{E(row['summary'])}</p><p class="meta">For {E(row['audience'])}</p>{("<ul class=spotlight-features>"+"".join("<li>"+E(item)+"</li>" for item in row.get("features",[]))+"</ul>") if row.get("spotlight") else ""}<div class="record-links">{' '.join(links)}</div>{related(row,topics)}</article>'''
 
 def writing(row,topics):
     source = 'Substack' if row['source'] == 'substack' else 'On this site'
@@ -86,16 +86,19 @@ def generate(root=ROOT):
     research = ''
     for t in topics.values():
         research += f'<section id="{t["id"]}"><h2>{E(t["name"])}</h2><p><strong>{E(t["question"])}</strong></p><p>{E(t.get("why",t.get("description","")))}</p><h3>How I study it</h3><p>{E(t.get("approach",""))}</p><h3>What we’re learning</h3><p>{E(t.get("learning",""))}</p><h3>Related work</h3>'
-        for rows,render in [(papers,publication),(projects,project),(writings,writing)]:
+        for rows,render in [([p for p in papers if p.get('author_role') in {'first','second','last'}],publication),(projects,project),(writings,writing)]:
             research += ''.join(render(x,topics) for x in rows if t['id'] in x['topics'])
         research += '</section>'
     put('research',research)
     for row in projects:
         text = f'<p>{E(row["summary"])}</p><h2>Who it is for</h2><p>{E(row["audience"])}</p><p><span class="badge-label">{E(row["maturity"])}</span> Status is a curated assessment; consult the repository before use.</p><h2>Installation and examples</h2><p>Use the repository README for current installation instructions, examples and limitations.</p><p>{link("https://github.com/"+row["repository"],"Open repository →")}</p>'
+        if row.get('overview'): text += '<h2>What it does</h2><p>'+E(row['overview'])+'</p>'
+        if row.get('features'): text += '<ul>'+''.join('<li>'+E(item)+'</li>' for item in row['features'])+'</ul>'
+        if row.get('limitations'): text += '<h2>Scope and interpretation</h2><p>'+E(row['limitations'])+'</p>'
         if row.get('docs_url'): text += '<p>'+link(row['docs_url'],'Documentation →')+'</p>'
         text += related(row,topics)
         for p in papers:
-            if p['id'] in row.get('paper_ids',[]): text += publication(p,topics)
+            if p['id'] in row.get('paper_ids',[]) and p.get('author_role') in {'first','second','last'}: text += publication(p,topics)
         put('project-'+row['id'],text)
 
 if __name__ == '__main__': generate()

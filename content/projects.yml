@@ -11,7 +11,7 @@
   docs_url: https://mdmanurung.github.io/cellprograms/
   paper_ids: []
   featured: true
-  feature_order: 1
+  feature_order: 2
   visibility: public
   provenance:
     checked_at: '2026-10-23'
@@ -31,8 +31,8 @@
   maturity: experimental
   docs_url: https://mdmanurung.github.io/ViralScan/
   paper_ids: []
-  featured: true
-  feature_order: 2
+  featured: false
+  feature_order: 5
   visibility: public
   provenance:
     checked_at: '2026-10-23'
@@ -52,10 +52,66 @@
   docs_url: https://mdmanurung.github.io/rajiveplus/
   paper_ids: []
   featured: true
-  feature_order: 3
+  feature_order: 4
   visibility: public
   provenance:
     checked_at: '2026-10-23'
     source: https://github.com/mdmanurung/rajiveplus
     review_note: Preview copy and conservative maturity label require owner sign-off
       before launch.
+- id: mycelium-extra
+  title: mycelium-extra
+  repository: mdmanurung/mycelium-extra
+  summary: 'Keep agent-assisted research connected to an explicit plan: review the
+    question, approve covered runs and inspect the execution record.'
+  audience: researchers using coding agents for scientific analysis
+  category: research-workflow
+  topics:
+  - computational-immunology
+  maturity: active
+  docs_url: https://mdmanurung.github.io/mycelium-extra/
+  paper_ids: []
+  featured: true
+  feature_order: 1
+  spotlight: true
+  features:
+  - Develop a sourced analysis plan
+  - Review covered execution against an approved plan
+  - See changes, provenance and coverage gaps
+  overview: A workflow plugin for Claude Code, Codex and OpenCode. It can be used
+    alongside Mycelium or in an ordinary research repository.
+  limitations: Execution coverage depends on the host and configured run path. The
+    tool supports oversight; scientific interpretation and correctness remain the
+    researcher’s responsibility.
+  visibility: public
+  provenance:
+    checked_at: '2026-10-23'
+    source: https://github.com/mdmanurung/mycelium-extra/blob/main/README.md
+    review_note: Highlighted at the owner’s explicit request; summary checked against
+      current README.
+- id: stablr
+  title: stablr
+  repository: mdmanurung/stablr
+  summary: An R implementation of STABL for sparse biomarker selection, with stability
+    paths, decoy-based thresholding and workflows for multi-omic prediction.
+  audience: researchers analysing high-dimensional clinical and omic data
+  category: statistical-method
+  topics:
+  - computational-immunology
+  maturity: active
+  docs_url: https://mdmanurung.github.io/stablr/
+  paper_ids: []
+  featured: true
+  feature_order: 3
+  overview: stablr brings the STABL approach into an R-native workflow. It includes
+    exploratory and validated analysis modes, with held-out evaluation in the validated
+    workflow.
+  limitations: STABL is an existing method; stablr is its R implementation and extension.
+    Consult the documentation for validation scope and the interpretation of selection
+    diagnostics.
+  visibility: public
+  provenance:
+    checked_at: '2026-10-23'
+    source: https://github.com/mdmanurung/stablr/blob/main/README.md
+    review_note: Public repository and current README checked; active development
+      is not a claim of stable validation.

@@ -20,3 +20,9 @@
 - Discovery workflow uploads proposals as artifacts with read-only permissions; it does not autonomously open PRs or publish candidates.
 
 - Owner-requested Rubicon news entry added, dated July 2026, with links to the ZonMw announcement and LUCID feature. It describes the award/project without presenting the future Sanger position as current.
+
+- Expanded the reviewed public software selection to five repositories. Mycelium Extra is the lead homepage/directory spotlight; cellprograms, stablr and RaJIVEplus are the other homepage selections. ViralScan remains in the full directory. Original method/upstream attribution is retained.
+
+- Applied the owner’s authorship rule: homepage selected papers and Research related-work studies must list Mikhael first, second or last. The full bibliography retains verified co-authored papers. Author roles are checked against the full author order.
+
+- Reused the owner-requested portrait from the existing website beside the short biography; original image bytes retained, with responsive sizing and descriptive alt text.

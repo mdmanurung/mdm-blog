@@ -4,6 +4,6 @@ description: Search publications by title, author, year and research topic, with
 page-layout: full
 ---
 
-Research articles and preprints, with links to the original scholarly records.
+Research articles and preprints, with links to the original scholarly records. [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=yeLdnPUAAAAJ) · [ORCID](https://orcid.org/0000-0003-2728-1829)
 
 {{< include ../_generated/publications.html >}}
