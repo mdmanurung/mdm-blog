@@ -1,0 +1,9 @@
+---
+title: Scientific software
+description: Open-source tools for agent-assisted research, single-cell analysis, biomarker selection and multi-omics.
+page-layout: full
+---
+
+Open-source tools for scientific analysis. Start with a tool’s overview, then follow its repository for installation instructions and examples.
+
+{{< include ../_generated/projects.html >}}

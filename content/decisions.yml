@@ -1,0 +1,9 @@
+- id: doi:10.1002/eji.202451029/v2/response1
+  decision: rejected
+  reason: Author response artifact, not a separate research publication
+- id: doi:10.1002/eji.202451029/v3/response1
+  decision: rejected
+  reason: Author response artifact, not a separate research publication
+- id: doi:10.1101/2025.03.28.645987
+  decision: rejected
+  reason: Superseded by 10.1016/j.isci.2025.113839; do not double-count

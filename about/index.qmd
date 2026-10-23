@@ -1,0 +1,20 @@
+---
+title: About
+description: Mikhael Manurung’s research background, interests and contact information.
+---
+
+::: {.reading}
+I am Mikhael Manurung, an immunologist and computational biologist at Leiden University Medical Center. I investigate immune variation across populations, with an interest in how environmental exposures and infection history influence responses to infection and vaccination.
+
+My work combines cytometry, single-cell profiling and computational analysis. Alongside experimental research, I develop open-source tools to make scientific analyses more interpretable and reproducible.
+
+I trained in medicine and completed my PhD in Immunology at Leiden University Medical Center in June 2025. I welcome conversations about population immunology, single-cell methods and reproducible scientific software.
+
+## Contact {#contact}
+
+- [Email](mailto:mikhael.manurung@gmail.com)
+- [ORCID](https://orcid.org/0000-0003-2728-1829)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=yeLdnPUAAAAJ)
+- [GitHub](https://github.com/mdmanurung)
+- [LinkedIn](https://www.linkedin.com/in/mikhaelmanurung/)
+:::

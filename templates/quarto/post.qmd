@@ -1,0 +1,13 @@
+---
+id: local:your-post-slug
+title: Your article title
+date: 2026-10-23
+description: A concise description of the article.
+topics: [computational-immunology]
+visibility: draft
+---
+
+Write the original article here. Keep drafts outside `writing/posts/`.
+To publish, move to `writing/posts/<slug>/index.qmd`, set `visibility: public`,
+and run the build. No code executes by default; enable execution explicitly
+for a reproducible article that needs it.

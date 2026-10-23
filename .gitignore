@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+
+_preview/
+_generated/
+.quarto/
+__pycache__/
+*.pyc
+.openai/
+
+/.quarto/
+**/*.quarto_ipynb

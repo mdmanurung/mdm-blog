@@ -1,0 +1,46 @@
+---
+title: ""
+pagetitle: Mikhael Manurung | Immunology & computational biology
+description: Mikhael Manurung’s research, news, selected publications and scientific software.
+page-layout: full
+---
+
+::: {.bio-layout}
+::: {.bio-intro}
+[Immunology & computational biology]{.eyebrow}
+
+# Mikhael Manurung
+
+I am an immunologist and computational biologist at Leiden University Medical Center. I study how environmental exposures, infection history and genetics shape human immune variation and responses to infection and vaccination.
+
+My work combines cytometry and single-cell profiling with computational methods. I also develop open-source tools for interpretable analysis and reproducible research.
+
+[About & contact](about/index.qmd) · [Publications](publications/index.qmd) · [GitHub](https://github.com/mdmanurung)
+
+::: {.research-links}
+**Research:** [Human immune variation](research/index.qmd#immune-variation) · [Infection & vaccination](research/index.qmd#infection-vaccines) · [Computational immunology](research/index.qmd#computational-immunology)
+:::
+:::
+
+::: {.portrait-column}
+![Mikhael Manurung](images/mdm_profile.jpeg){.profile-portrait width=240 height=240}
+:::
+:::
+
+{{< include _generated/news.html >}}
+
+## Explore my research
+
+Choose a theme to explore the questions and methods behind my work.
+
+{{< include _generated/explorer.html >}}
+
+{{< include _generated/featured-publications.html >}}
+
+## Selected packages & software
+
+{{< include _generated/featured-projects.html >}}
+
+[All software →](software/index.qmd){.section-link}
+
+{{< include _generated/latest-writing.html >}}

@@ -1,0 +1,9 @@
+---
+title: Writing
+description: Research notes, technical tutorials and essays, including links to original Substack articles.
+page-layout: full
+---
+
+Research notes, technical tutorials and essays. External articles link to their original publication.
+
+{{< include ../_generated/writing.html >}}

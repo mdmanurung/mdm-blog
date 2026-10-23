@@ -1,0 +1,10 @@
+---
+title: ViralScan
+description: "A Snakemake workflow for investigating viral signals in single-cell RNA-seq. The\
+  \ v3 counting contract is under development; consult the repository\u2019s development\
+  \ notice before quantitative use."
+---
+
+[← All software](../index.qmd)
+
+{{< include ../../_generated/project-viralscan.html >}}
