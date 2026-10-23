@@ -1,1 +1,61 @@
-[]
+- id: cellprograms
+  title: cellprograms
+  repository: mdmanurung/cellprograms
+  summary: Discover cell-type-specific transcriptional programs from pseudobulk single-cell
+    RNA-seq and investigate how they coordinate across cell types.
+  audience: researchers analysing single-cell expression across samples
+  category: analysis-tool
+  topics:
+  - computational-immunology
+  maturity: experimental
+  docs_url: https://mdmanurung.github.io/cellprograms/
+  paper_ids: []
+  featured: true
+  feature_order: 1
+  visibility: public
+  provenance:
+    checked_at: '2026-10-23'
+    source: https://github.com/mdmanurung/cellprograms
+    review_note: Preview copy and conservative maturity label require owner sign-off
+      before launch.
+- id: viralscan
+  title: ViralScan
+  repository: mdmanurung/ViralScan
+  summary: A Snakemake workflow for investigating viral signals in single-cell RNA-seq.
+    The v3 counting contract is under development; consult the repository’s development
+    notice before quantitative use.
+  audience: researchers studying viral signals in sequencing data
+  category: analysis-tool
+  topics:
+  - computational-immunology
+  maturity: experimental
+  docs_url: https://mdmanurung.github.io/ViralScan/
+  paper_ids: []
+  featured: true
+  feature_order: 2
+  visibility: public
+  provenance:
+    checked_at: '2026-10-23'
+    source: https://github.com/mdmanurung/ViralScan
+    review_note: Preview copy and conservative maturity label require owner sign-off
+      before launch.
+- id: rajiveplus
+  title: RaJIVEplus
+  repository: mdmanurung/rajiveplus
+  summary: Separate shared and block-specific variation in matched multiblock datasets
+    using robust angle-based JIVE.
+  audience: researchers integrating matched multi-omics measurements
+  category: analysis-tool
+  topics:
+  - computational-immunology
+  maturity: experimental
+  docs_url: https://mdmanurung.github.io/rajiveplus/
+  paper_ids: []
+  featured: true
+  feature_order: 3
+  visibility: public
+  provenance:
+    checked_at: '2026-10-23'
+    source: https://github.com/mdmanurung/rajiveplus
+    review_note: Preview copy and conservative maturity label require owner sign-off
+      before launch.

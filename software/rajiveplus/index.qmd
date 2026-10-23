@@ -1,0 +1,9 @@
+---
+title: RaJIVEplus
+description: Separate shared and block-specific variation in matched multiblock datasets using
+  robust angle-based JIVE.
+---
+
+[← All software](../index.qmd)
+
+{{< include ../../_generated/project-rajiveplus.html >}}

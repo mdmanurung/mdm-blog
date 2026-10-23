@@ -1,0 +1,9 @@
+---
+title: cellprograms
+description: Discover cell-type-specific transcriptional programs from pseudobulk single-cell RNA-seq
+  and investigate how they coordinate across cell types.
+---
+
+[← All software](../index.qmd)
+
+{{< include ../../_generated/project-cellprograms.html >}}
