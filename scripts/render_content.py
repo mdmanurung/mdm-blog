@@ -61,7 +61,7 @@ def generate(root=ROOT):
     for path in out.glob('*.html'): path.unlink()
     def put(name,text): (out/(name+'.html')).write_text(text+'\n')
     news = sorted(data.get('news',[]),key=lambda x:str(x['date']),reverse=True)[:4]
-    put('news', ('<h2>News</h2><div class="news-list">'+''.join('<article class="news-item"><time datetime="'+E(x['date'])+'">'+E(x.get('display_date',x['date']))+'</time><div><p>'+ (link(x['url'],x['title']) if x.get('url') else E(x['title']))+'</p><p class="meta">'+E(x.get('description',''))+'</p></div></article>' for x in news)+'</div>') if news else '')
+    put('news', ('<h2>News</h2><div class="news-list">'+''.join('<article class="news-item"><time datetime="'+E(x['date'])+'">'+E(x.get('display_date',x['date']))+'</time><div><p>'+ (link(x['url'],x['title']) if x.get('url') else E(x['title']))+'</p><p class="meta">'+E(x.get('description',''))+'</p>'+('<p class="news-sources">'+ ' · '.join(link(item['url'],item['label']) for item in x.get('links',[]))+'</p>' if x.get('links') else '')+'</div></article>' for x in news)+'</div>') if news else '')
     put('themes','<div class="theme-grid">'+''.join(f'<article class="theme-card"><span class="eyebrow">0{i+1}</span><h3>{link("/research/#"+x["id"],x["name"])}</h3><p>{E(x["question"])}</p></article>' for i,x in enumerate(topics.values()))+'</div>')
     put('publications',catalog('publications',papers,topics,publication))
     put('projects',catalog('projects',projects,topics,project))

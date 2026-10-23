@@ -18,3 +18,5 @@
 - Keep the old Distill sources and tracked `_site/` unchanged until production hosting and rollback are verified.
 - Use one review branch with milestone-sized commits and a draft PR rather than seven dependent review branches. No merge or live-site deployment.
 - Discovery workflow uploads proposals as artifacts with read-only permissions; it does not autonomously open PRs or publish candidates.
+
+- Owner-requested Rubicon news entry added, dated July 2026, with links to the ZonMw announcement and LUCID feature. It describes the award/project without presenting the future Sanger position as current.

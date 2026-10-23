@@ -23,3 +23,22 @@
   visibility: public
   provenance:
     confirmed_by: Owner-provided biography in conversation
+- id: rubicon-2026
+  title: Awarded a ZonMw Rubicon fellowship
+  date: '2026-07-23'
+  display_date: July 2026
+  description: I received a Rubicon fellowship for a 24-month project at the Wellcome
+    Sanger Institute, investigating how ancestral genomic context shapes immune gene
+    regulation.
+  url: https://lucid.lumc.nl/news/mikhael-manurung-awarded-rubicon-zonmw-fellowship-37
+  links:
+  - label: ZonMw announcement
+    url: https://www.zonmw.nl/nl/nieuws/drie-onderzoekers-ontvangen-zonmw-rubicon-beurs-voor-onderzoek-het-buitenland
+  topics:
+  - immune-variation
+  - computational-immunology
+  visibility: public
+  provenance:
+    confirmed_by: Owner requested inclusion; ZonMw 23 July 2026 and LUCID 31 July
+      2026 announcements checked
+    checked_at: '2026-10-23'

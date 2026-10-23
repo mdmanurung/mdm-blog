@@ -129,6 +129,8 @@ def validate(data, posts=()):
             if not iso_date(row.get('date')): fail(a,'invalid news date')
             address=row.get('url','')
             if address and not address.startswith('/') and not url(address): fail(a,'invalid news URL')
+            for item in row.get('links',[]):
+                if not isinstance(item,dict) or not item.get('label') or not url(item.get('url')): fail(a,'invalid news source link')
         elif kind in {'substack','native'}:
             if not iso_date(row.get('date')): fail(a,'invalid date')
             if kind == 'substack':
